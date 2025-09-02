@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
       - run: yarn install      # installs dependencies
-      - run: yarn build         # runs your test suite
 
 workflows:
   say-hello-workflow:
