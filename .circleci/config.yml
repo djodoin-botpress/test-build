@@ -3,15 +3,11 @@ version: 2.1
 jobs:
   say-hello:
     docker:
-      - image: cimg/base:current
+      - image: cimg/node:current
     steps:
       - checkout
-      - run:
-          name: "Install Yarn"
-          command: "curl -o- -L https://yarnpkg.com/install.sh | bash"
-      - run:
-          name: "Yarn Build"
-          command: "yarn build"
+      - run: yarn install      # installs dependencies
+      - run: yarn test         # runs your test suite
 
 workflows:
   say-hello-workflow:
