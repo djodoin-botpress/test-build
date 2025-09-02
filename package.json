@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@botpress/webchat": "2.6.2",
+    "@botpress/webchat": "^3.2.0",
     "@chakra-ui/react": "^2.8.0",
     "@ckeditor/ckeditor5-build-classic": "^43.1.1",
     "@ckeditor/ckeditor5-react": "^6.2.0",
